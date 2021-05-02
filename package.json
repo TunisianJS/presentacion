@@ -1,14 +1,27 @@
 {
-  "name": "presentacion",
+  "name": "presentation",
   "description": "Slides to present the community at each event",
   "version": "0.0.1",
   "scripts": {
-    "build": "mkdir -p ./public/images && cp -R ./src/images/. ./public/images && mdx-deck build src/presentacion.mdx --out-dir public/",
-    "deploy": "npm run build && cd public && echo presentacion-meetupjs.surge.sh > CNAME && surge",
-    "start": "mdx-deck src/presentacion.mdx",
+    "build": "mkdir -p ./public/images && cp -R ./src/images/. ./public/images && mdx-deck build src/presentation.mdx --out-dir public/",
+    "predeploy": "npm run build",
+    "deploy": "cd public && echo presentation-tunisianjs.surge.sh > CNAME && surge",
+    "start": "mdx-deck src/presentation.mdx",
     "precommit": "lint-staged"
   },
-  "author": "durancristhian@gmail.com",
+  "author": " tunjscommunity@gmail.com",
+  "contributors": [
+    {
+      "name": "Imed Jaberi",
+      "email": "imed_jebari@hotmail.fr",
+      "url": "https://www.3imed-jaberi.com/"
+    },
+    {
+      "name": "Heithem Moumni",
+      "email": "moumniheithem@gmail.com",
+      "url": "https://heithem.wtf/"
+    }
+  ],
   "license": "MIT",
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -32,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TunisianJS/presentacion.github.io.git"
+    "url": "git+https://github.com/TunisianJS/presentation.github.io.git"
   },
   "keywords": [
     "meetup",
@@ -40,7 +53,7 @@
     "buenos aires"
   ],
   "bugs": {
-    "url": "https://github.com/TunisianJS/presentacion.github.io/issues"
+    "url": "https://github.com/TunisianJS/presentation.github.io/issues"
   },
   "homepage": "https://presentation.js-community.tn/"
 }
