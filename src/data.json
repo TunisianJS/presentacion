@@ -1,0 +1,121 @@
+{
+  "slide1": {
+    "title": "Welcome to event #59",
+    "logo": {
+      "src": "./images/logo.svg",
+      "alt": "Tunisian JS Community Meetup."
+    }
+  },
+  "slide2": {
+    "title": "Organizers",
+    "profiles": [
+      {
+        "name": "Ahmed Rebai",
+        "avatar": "https://avatars.githubusercontent.com/u/13053759",
+        "github": "https://github.com/Rebaiahmed"  
+      },
+      {
+        "name": "Chehir Dhawedi",
+        "avatar": "https://avatars.githubusercontent.com/u/11840937",
+        "github": "https://github.com/thevexx"  
+      },
+      {
+        "name": "Heithem Moumni",
+        "avatar": "https://avatars.githubusercontent.com/u/18581851",
+        "github": "https://github.com/heithemmoumni"  
+      },
+      {
+        "name": "Houssem Amiri",
+        "avatar": "https://avatars.githubusercontent.com/u/18076376",
+        "github": "https://github.com/AmiriHoussem"  
+      },
+      {
+        "name": "Mohamed Anas Ben Othman",
+        "avatar": "https://avatars.githubusercontent.com/u/15521554",
+        "github": "https://github.com/mabotn"  
+      },
+      {
+        "name": "Imed Jaberi",
+        "avatar": "https://avatars.githubusercontent.com/u/43971542",
+        "github": "https://github.com/3imed-jaberi"  
+      },
+      {
+        "name": "Majd Mimoun",
+        "avatar": "https://avatars.githubusercontent.com/u/16142855",
+        "github": "https://github.com/mnmajd"  
+      },
+      {
+        "name": "Chaouki Ben Fredj",
+        "avatar": "https://avatars.githubusercontent.com/u/25899308",
+        "github": "https://github.com/chaoukibenfradj"  
+      },
+      {
+        "name": "Chamsddine Bouzaine",
+        "avatar": "https://avatars.githubusercontent.com/u/22895649",
+        "github": "https://github.com/ChamsBouzaiene"  
+      }
+    ]
+  },
+  "slide3": {
+    "title": "About Tunisian JS-Community",
+    "boxsText": [
+      "We started in December 2019, we have already done more than 8 events 🤓",
+      "We have a Facebook group with more than 3000 people 👨🏻‍💻👩🏻‍💻",
+      "We try to make the events you want to come back to ❤️"
+    ]
+  },
+  "slide4": {
+    "title": "Tunisian JS Community Links",
+    "boxs": [
+      {
+        "image": "website",
+        "text": "js-community.tn"
+      },
+      {
+        "image": "twitter",
+        "text": "@tunisianjs"
+      },
+      {
+        "image": "youtube",
+        "text": "Tunisian JS Community"
+      },
+      {
+        "image": "facebook",
+        "text": "Tunisian JS Community"
+      }
+    ]
+  },
+  "slide5": {
+    "title": "In this session #58",
+    "talks": [
+      {
+        "title": "React State",
+        "speaker": "Chames"
+      }
+    ],
+    "kahoot": true,
+    "stickers": true
+  },
+  "slide6": {
+    "title": "Talks",
+    "to": {
+      "text": "TunisianJS/talks",
+      "link": "https://github.com/TunisianJS/talks"
+    }
+  },
+  "slide7": {
+    "title": "Acknowledgement",
+    "sponsors": [
+      {
+        "name": "Stensul",
+        "text": "for the space and the food and drink 🤩"
+      }
+    ]
+  },
+  "slide8": {
+    "logo": {
+      "src": "./images/logo.svg",
+      "alt": "Tunisian JS Community Meetup."
+    }
+  }
+}

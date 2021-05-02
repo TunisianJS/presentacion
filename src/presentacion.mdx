@@ -1,105 +1,123 @@
+import uid from 'cross-uid';
 import { Head } from 'mdx-deck';
+
 import Box from './Box';
 import Logo from './Logo';
 import P from './Paragraph';
 import Page from './Page';
 import Profile from './Profile';
 import Title from './Title';
+import SubmitTalk from './SubmitTalk'
+import { slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8 }  from './data.json'
 
 <Head>
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet" />
 </Head>
 
 <Page confetti>
-  <Title text="Welcome to event #58" />
-  <Logo />
+  <Title text={slide1.title} />
+  <Logo {...slide1.logo} />
 </Page>
 
 ---
 
 <Page>
-  <Title text="Organizers" />
+  <Title text={slide2.title} />
   <div
     style={{
       display: 'flex'
     }}
   >
-    <Profile twitter="a0viedo" name="a0" />
-    <Profile twitter="camilunghi" name="Cami" />
-    <Profile twitter="durancristhian" name="Cris" />
-    <Profile twitter="srgianu" name="Gianu" />
-    <Profile twitter="mateosilguero1" name="Mate" />
+  { 
+    slide2.profiles.map(({ name, avatar, github }) => (
+      <Profile key={uid()} github={github} avatar={avatar} name={name} />
+    ))
+  }
   </div>
 </Page>
 
 ---
 
 <Page>
-  <Title text="About Tunisian JS-Community" />
-  <Box text="We started in December 2019, we have already done more than 8 events 🤓" />
-  <Box text="We have a Facebook group with more than 3000 people 👨🏻‍💻👩🏻‍💻" />
-  <Box text="We try to make the events you want to come back to ❤️" />
+  <Title text={slide3.title} />
+    { 
+      slide3.boxsText.map(text => (
+        <Box key={uid()} text={text} />
+      ))
+    }
 </Page>
 
 ---
 
 <Page>
-  <Title text="Tunisian JS Community Links" />
-  <Box image="website" text="js-community.tn" />
-  <Box image="twitter" text="@tunisianjs" />
-  <Box image="youtube" text="Tunisian JS Community" />
-  <Box image="facebook" text="Tunisian JS Community" />
+  <Title text={slide4.title} />
+    { 
+      slide4.boxs.map(({image, text}) => (
+        <Box key={uid()} image={image} text={text} />
+      ))
+    }
 </Page>
 
 ---
 
 <Page>
-  <Title text="In this session #58" />
-  <P>
-    <strong>Charla secreta</strong>
-    <span> por Lenny</span>
-  </P>
-  <P>
-    <strong>Docker desde las trincheras</strong>
-    <span> por Peter</span>
-  </P>
-  <P>
-    <strong>Kahoot! </strong>
-    <span>with prizes</span>
-    <span style={{ marginLeft: '.5rem' }}>📱</span>
-  </P>
-  <P>
-    <strong>Stickers</strong>
-    <span style={{ marginLeft: '.5rem' }}>✨</span>
-  </P>
-  <P>
-    <span style={{ fontSize: '5rem' }}>🕸👨🏻‍💻</span>
-  </P>
-</Page>
+  <Title text={slide5.title} />
+  
+    { 
+      slide5.talks.map((talk) => (
+        <P key={uid()}>
+          <strong>{talk.title}</strong>
+          <span> By {talk.speaker}</span>
+        </P>
+      ))
+    }
 
----
+    {
+      slide5.kahoot && (
+        <P>
+          <strong>Kahoot! </strong>
+          <span>with prizes</span>
+          <span style={{ marginLeft: '.5rem' }}>📱</span>
+        </P>
+      ) 
+    }
 
-<Page>
-  <Title text="Talks" />
+    {
+      slide5.stickers && (
+        <P>
+          <strong>Stickers</strong>
+          <span style={{ marginLeft: '.5rem' }}>✨</span>
+        </P>
+      ) 
+    }
+
   <P>
-    Submit your proposal to <a 
-      href='https://github.com/TunisianJS/talks'
-      style={{ textDecoration: 'none' }}
-      ><strong>TunisianJS/talks</strong></a> 👌🏻
-  </P>
-</Page>
-
----
-
-<Page>
-  <Title text="Acknowledgement" />
-  <P>
-    To <strong>Stensul</strong>for the space and the food and drink 🤩 <span style={{ marginLeft: '.5rem' }}>❤️</span>
+    <span style={{ fontSize: '5rem' }}>🚀</span>
   </P>
 </Page>
 
 ---
 
 <Page>
-  <Logo />
+  <Title text={slide6.title} />
+  <SubmitTalk to={slide6.to} />
+</Page>
+
+---
+
+<Page>
+  <Title text={slide7.title} />
+  {
+    slide7.sponsors.map((sp) => (
+      <P key={uid()}>
+        To <strong>{sp.name}</strong> {sp.text}
+      </P>
+    ))
+  }
+</Page>
+
+---
+
+<Page>
+  <Logo {...slide8.logo} />
 </Page>

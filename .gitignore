@@ -10,3 +10,7 @@
 .DS_Store
 
 npm-debug.log*
+
+# locks
+package-lock.json
+yarn.lock
