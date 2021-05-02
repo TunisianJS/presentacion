@@ -1,15 +1,16 @@
 {
   "name": "presentation",
-  "description": "Slides to present the community at each event",
-  "version": "0.0.1",
+  "description": "Slides to present the community at each event 〽️.",
+  "version": "0.1.0",
   "scripts": {
-    "build": "mkdir -p ./public/images && cp -R ./src/images/. ./public/images && mdx-deck build src/presentation.mdx --out-dir public/",
-    "predeploy": "npm run build",
-    "deploy": "cd public && echo presentation-tunisianjs.surge.sh > CNAME && surge",
+    "precommit": "lint-staged",
     "start": "mdx-deck src/presentation.mdx",
-    "precommit": "lint-staged"
+    "prebuild": "mkdir -p ./public/images && cp -R ./src/images/. ./public/images",
+    "build": "mdx-deck build src/presentation.mdx --out-dir public/",
+    "predeploy": "npm run build",
+    "deploy": "cd public && echo presentation-tunisianjs.surge.sh > CNAME && surge"
   },
-  "author": " tunjscommunity@gmail.com",
+  "author": "tunjscommunity@gmail.com",
   "contributors": [
     {
       "name": "Imed Jaberi",
@@ -50,10 +51,10 @@
   "keywords": [
     "meetup",
     "javascript",
-    "buenos aires"
+    "tunisia"
   ],
   "bugs": {
-    "url": "https://github.com/TunisianJS/presentation.github.io/issues"
+    "url": "https://github.com/TunisianJS/presentation/issues"
   },
-  "homepage": "https://presentation.js-community.tn/"
+  "homepage": "https://github.com/TunisianJS/presentation"
 }
