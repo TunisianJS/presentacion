@@ -1,6 +1,5 @@
 import uid from 'cross-uid';
 import { Head } from 'mdx-deck';
-
 import Box from './Box';
 import Logo from './Logo';
 import P from './Paragraph';
@@ -8,6 +7,8 @@ import Page from './Page';
 import Profile from './Profile';
 import Title from './Title';
 import SubmitTalk from './SubmitTalk'
+import { Kahoot, Stickers } from './ConditionalRendering'
+
 import { slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8 }  from './data.json'
 
 <Head>
@@ -72,24 +73,8 @@ import { slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8 }  from 
       ))
     }
 
-    {
-      slide5.kahoot && (
-        <P>
-          <strong>Kahoot! </strong>
-          <span>with prizes</span>
-          <span style={{ marginLeft: '.5rem' }}>📱</span>
-        </P>
-      ) 
-    }
-
-    {
-      slide5.stickers && (
-        <P>
-          <strong>Stickers</strong>
-          <span style={{ marginLeft: '.5rem' }}>✨</span>
-        </P>
-      ) 
-    }
+  <Kahoot value={slide5.kahoot} />
+  <Stickers value={slide5.stickers} />
 
   <P>
     <span style={{ fontSize: '5rem' }}>🚀</span>
