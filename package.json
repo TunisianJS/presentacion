@@ -1,6 +1,6 @@
 {
   "name": "presentacion",
-  "description": "Slides para presentar la comunidad en cada evento",
+  "description": "Slides to present the community at each event",
   "version": "0.0.1",
   "scripts": {
     "build": "mkdir -p ./public/images && cp -R ./src/images/. ./public/images && mdx-deck build src/presentacion.mdx --out-dir public/",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meetupjs-ar/presentacion.github.io.git"
+    "url": "git+https://github.com/TunisianJS/presentacion.github.io.git"
   },
   "keywords": [
     "meetup",
@@ -40,7 +40,7 @@
     "buenos aires"
   ],
   "bugs": {
-    "url": "https://github.com/meetupjs-ar/presentacion.github.io/issues"
+    "url": "https://github.com/TunisianJS/presentacion.github.io/issues"
   },
-  "homepage": "https://presentacion.meetupjs.com.ar/"
+  "homepage": "https://presentation.js-community.tn/"
 }

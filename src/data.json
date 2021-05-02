@@ -12,47 +12,47 @@
       {
         "name": "Ahmed Rebai",
         "avatar": "https://avatars.githubusercontent.com/u/13053759",
-        "github": "https://github.com/Rebaiahmed"  
+        "github": "https://github.com/Rebaiahmed"
       },
       {
         "name": "Chehir Dhawedi",
         "avatar": "https://avatars.githubusercontent.com/u/11840937",
-        "github": "https://github.com/thevexx"  
+        "github": "https://github.com/thevexx"
       },
       {
         "name": "Heithem Moumni",
         "avatar": "https://avatars.githubusercontent.com/u/18581851",
-        "github": "https://github.com/heithemmoumni"  
+        "github": "https://github.com/heithemmoumni"
       },
       {
         "name": "Houssem Amiri",
         "avatar": "https://avatars.githubusercontent.com/u/18076376",
-        "github": "https://github.com/AmiriHoussem"  
+        "github": "https://github.com/AmiriHoussem"
       },
       {
         "name": "Mohamed Anas Ben Othman",
         "avatar": "https://avatars.githubusercontent.com/u/15521554",
-        "github": "https://github.com/mabotn"  
+        "github": "https://github.com/mabotn"
       },
       {
         "name": "Imed Jaberi",
         "avatar": "https://avatars.githubusercontent.com/u/43971542",
-        "github": "https://github.com/3imed-jaberi"  
+        "github": "https://github.com/3imed-jaberi"
       },
       {
         "name": "Majd Mimoun",
         "avatar": "https://avatars.githubusercontent.com/u/16142855",
-        "github": "https://github.com/mnmajd"  
+        "github": "https://github.com/mnmajd"
       },
       {
         "name": "Chaouki Ben Fredj",
         "avatar": "https://avatars.githubusercontent.com/u/25899308",
-        "github": "https://github.com/chaoukibenfradj"  
+        "github": "https://github.com/chaoukibenfradj"
       },
       {
         "name": "Chamsddine Bouzaine",
         "avatar": "https://avatars.githubusercontent.com/u/22895649",
-        "github": "https://github.com/ChamsBouzaiene"  
+        "github": "https://github.com/ChamsBouzaiene"
       }
     ]
   },
@@ -113,6 +113,27 @@
     ]
   },
   "slide8": {
+    "title": "Acknowledgement",
+    "sponsors": [
+      {
+        "name": "Five",
+        "image": "./images/sponsors/five.png"
+      },
+      {
+        "name": "Level 1",
+        "image": "./images/sponsors/level1.png"
+      },
+      {
+        "name": "Pocteo",
+        "image": "./images/sponsors/pocteo.png"
+      },
+      {
+        "name": "3almadmoon",
+        "image": "./images/sponsors/3almadmoon.svg"
+      }
+    ]
+  },
+  "slide9": {
     "logo": {
       "src": "./images/logo.svg",
       "alt": "Tunisian JS Community Meetup."

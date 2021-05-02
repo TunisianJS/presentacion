@@ -9,7 +9,7 @@ import Title from './Title';
 import SubmitTalk from './SubmitTalk'
 import { Kahoot, Stickers } from './ConditionalRendering'
 
-import { slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8 }  from './data.json'
+import { slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9 }  from './data.json'
 
 <Head>
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet" />
@@ -106,5 +106,29 @@ import { slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8 }  from 
 ---
 
 <Page>
-  <Logo {...slide8.logo} />
+  <Title text={slide8.title} />
+  <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+    }}>
+  {
+    slide8.sponsors.map((sp) => (
+      <div
+          style={{
+        flexDirection: 'column',
+        flexWwrap: 'wrap',
+        padding: '1.5rem',
+    }} key={uid()}
+      >
+        <img src={sp.image} style={{ width: '200px' }} />
+      </div>
+    ))
+  }</div>
+  
+</Page>
+
+---
+
+<Page>
+  <Logo {...slide9.logo} />
 </Page>
