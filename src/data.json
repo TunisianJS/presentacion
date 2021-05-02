@@ -1,6 +1,6 @@
 {
   "slide1": {
-    "title": "Welcome to event #59",
+    "title": "Welcome to event #10",
     "logo": {
       "src": "./images/logo.svg",
       "alt": "Tunisian JS Community Meetup."
@@ -25,6 +25,16 @@
         "github": "https://github.com/heithemmoumni"
       },
       {
+        "name": "Imed Jaberi",
+        "avatar": "https://avatars.githubusercontent.com/u/43971542",
+        "github": "https://github.com/3imed-jaberi"
+      },
+      {
+        "name": "Chamsddine Bouzaine",
+        "avatar": "https://avatars.githubusercontent.com/u/22895649",
+        "github": "https://github.com/ChamsBouzaiene"
+      },
+      {
         "name": "Houssem Amiri",
         "avatar": "https://avatars.githubusercontent.com/u/18076376",
         "github": "https://github.com/AmiriHoussem"
@@ -35,11 +45,6 @@
         "github": "https://github.com/mabotn"
       },
       {
-        "name": "Imed Jaberi",
-        "avatar": "https://avatars.githubusercontent.com/u/43971542",
-        "github": "https://github.com/3imed-jaberi"
-      },
-      {
         "name": "Majd Mimoun",
         "avatar": "https://avatars.githubusercontent.com/u/16142855",
         "github": "https://github.com/mnmajd"
@@ -48,11 +53,6 @@
         "name": "Chaouki Ben Fredj",
         "avatar": "https://avatars.githubusercontent.com/u/25899308",
         "github": "https://github.com/chaoukibenfradj"
-      },
-      {
-        "name": "Chamsddine Bouzaine",
-        "avatar": "https://avatars.githubusercontent.com/u/22895649",
-        "github": "https://github.com/ChamsBouzaiene"
       }
     ]
   },
@@ -86,7 +86,7 @@
     ]
   },
   "slide5": {
-    "title": "In this session #58",
+    "title": "In this meetup #10 ~ S7our Talk",
     "talks": [
       {
         "title": "React State",
@@ -104,16 +104,20 @@
     }
   },
   "slide7": {
-    "title": "Acknowledgement",
+    "title": "Acknowledgement 1/2",
     "sponsors": [
       {
-        "name": "Stensul",
-        "text": "for the space and the food and drink 🤩"
+        "name": "Hive12",
+        "text": "for the space 🤩"
+      },
+      {
+        "name": "PlanB",
+        "text": "for the food and drink 🥪"
       }
     ]
   },
   "slide8": {
-    "title": "Acknowledgement",
+    "title": "Acknowledgement 2/2",
     "sponsors": [
       {
         "name": "Five",
@@ -130,6 +134,18 @@
       {
         "name": "3almadmoon",
         "image": "./images/sponsors/3almadmoon.svg"
+      },
+      {
+        "name": "Hive 12",
+        "image": "./images/sponsors/hive12.png"
+      },
+      {
+        "name": "Lollipop",
+        "image": "./images/sponsors/lollipop.png"
+      },
+      {
+        "name": "ReBootKamp",
+        "image": "./images/sponsors/re-book-kamp.png"
       }
     ]
   },

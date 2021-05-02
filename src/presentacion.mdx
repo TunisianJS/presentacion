@@ -17,6 +17,7 @@ import { slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9 
 
 <Page confetti>
   <Title text={slide1.title} />
+  <br/><br/>
   <Logo {...slide1.logo} />
 </Page>
 
@@ -107,18 +108,21 @@ import { slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9 
 
 <Page>
   <Title text={slide8.title} />
-  <div style={{
+  <div         
+    style={{
       display: 'flex',
-      justifyContent: 'center',
-    }}>
+      flexWrap: 'wrap',
+      justifyContent: 'center'
+    }} 
+  >
   {
     slide8.sponsors.map((sp) => (
       <div
-          style={{
-        flexDirection: 'column',
-        flexWwrap: 'wrap',
-        padding: '1.5rem',
-    }} key={uid()}
+        key={uid()}
+        style={{
+          flexDirection: 'column',
+          padding: '1.5rem',
+        }} 
       >
         <img src={sp.image} style={{ width: '200px' }} />
       </div>
