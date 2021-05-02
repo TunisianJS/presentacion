@@ -5,7 +5,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "start": "mdx-deck src/presentation.mdx",
-    "prebuild": "mkdir -p ./public/images && cp -R ./src/images/. ./public/images",
+    "prebuild": "rm -rf .\\public && mkdir .\\public && cp -R .\\src\\images\\ .\\public",
     "build": "mdx-deck build src/presentation.mdx --out-dir public/",
     "predeploy": "npm run build",
     "deploy": "cd public && echo presentation-tunisianjs.surge.sh > CNAME && surge"
