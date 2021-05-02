@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const confettiBaseStyles = {
   animation: 'confetti 5s ease-in-out -2s infinite',
@@ -182,7 +182,7 @@ const injectStyle = style => {
 
 function Confetti() {
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     injectStyle(`
       @keyframes confetti {
           0% { transform: rotateZ(15deg) rotateY(0deg) translate(0, 0); }
