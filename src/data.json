@@ -86,15 +86,19 @@
     ]
   },
   "slide5": {
-    "title": "In this meetup #10 ~ S7our Talk",
+    "title": "In this meetup #10 ~ Aïd Talk",
     "talks": [
       {
-        "title": "React State",
-        "speaker": "Chames"
+        "title": "Learn and share on online video platforms",
+        "speaker": "Houssem Delai"
+      },
+      {
+        "title": "ثورة البرمجة العربية",
+        "speaker": "Omar Hasan"
       }
     ],
-    "kahoot": true,
-    "stickers": true
+    "kahoot": false,
+    "stickers": false
   },
   "slide6": {
     "title": "Talks",
@@ -107,12 +111,8 @@
     "title": "Acknowledgement 1/2",
     "sponsors": [
       {
-        "name": "Hive12",
-        "text": "for the space 🤩"
-      },
-      {
-        "name": "PlanB",
-        "text": "for the food and drink 🥪"
+        "name": "Our team",
+        "text": "for spend this time 🤩"
       }
     ]
   },
